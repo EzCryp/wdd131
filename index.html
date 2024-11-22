@@ -9,21 +9,20 @@
         <title>WDD 131 - Dynamic Web Fundamentals - Ezra Zacarias</title>
     </head>
     <body> 
-      </header>
+      <header>
         <nav>
         <a href="www.linkedin.com/in/ezrazacarias">LinkedIn</a>
         <a href="https://byui.instructure.com/">I-Learn</a>
         <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
         <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
         <a href="#">Final Projects</a>
         </nav>
       </header>
       <main>
         <h1>Ezra Vincent Zacarias | WDD 131</h1>
-        <img
-          class="fit-picture" 
-          src="images/ezandgeeJPG.JPG" alt="Ezra Zacarias" width="320" height="auto">
-        <p> </p>
+        <img class="profile" src="images/ezandgeeJPG.JPG" alt="Ezra Zacarias" width="320" height="auto">
+        <p></p>
         <h3><i><u>About Me:</u></i></h3>
         <p>My name is Ezra Vincent Zacarias. I am a student at BYU-Idaho.  
           I am currently studying Web and Computer Programming since Fall 2023. I am a father of two boys 
@@ -39,9 +38,8 @@
             The Philippines is located in the Pacific Ocean and is home to beautiful beaches, lush forests, and diverse wildlife.</p>
       </aside>
       <footer>
-        <p>&copy;2024 | Ezra Zacarias | PHL 🇵🇭</p>
-        <p> id:Last Updated <span id="currentyear"></span></p>
-        <p>Last Updated: <span id="currentdate"></span></p>
+        <p>&copy; <span id="currentyear"></span> | Ezra Zacarias | PHL 🇵🇭 |</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
       </footer>
     </body>
 </html>

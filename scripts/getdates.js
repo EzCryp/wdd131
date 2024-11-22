@@ -1,8 +1,3 @@
-// Dynamically populate the current year
-const yearElement = document.getElementById('currentyear');
-const currentYear = new Date().getFullYear();
-yearElement.textContent = currentYear;
+document.getElementById("lastModified").textContent = document.lastModified;
 
-// Dynamically populate the last modified date
-const lastModifiedElement = document.getElementById('lastModified');
-lastModifiedElement.textContent = 'Last Modification: ' + document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
