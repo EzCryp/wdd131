@@ -5,40 +5,40 @@
     /* border: 1px solid red; */
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-align: center;
     font-size: 1em;
-    padding: 1rem;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
 }
+
 body {
-    
-    font-family: Verdana, sans-serif;
-    display: grid;
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    /* height: 100vh; */
     margin: 0;
-    grid-template: auto 3fr auto / 4fr 1fr;
     grid-template-areas: 
-        "header header" 
-        "main aside" 
-        "footer footer";
+        "header" 
+        "main" 
+        "footer";
 }
 
 /* HEADER */
-
 header {
-    background: gray;
-    /* padding: 1rem; */
+    background-color: darkgray;
+    color: darkblue;
+    font: 1em sans-serif;
     grid-area: header;
 }
 
+
 /* NAV */
 nav {
- 
-    font: 1em sans-serif;
     display: flex;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 1em;
     grid-area: nav;
+    background: darkblue;
+    box-shadow: 0 0 10px lightblue;
 }
 
 nav a {
@@ -46,46 +46,134 @@ nav a {
     color: white;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+nav a:hover {
+    color: lightblue;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
 /* MAIN */
 main {
+    display: flex;
+    grid-template-rows: 2fr 1fr;
+    height: 100vh;
+    background-color: darkgray;
+    /* gap: 0; */
     grid-area: main;
-    padding: 1rem;
 }
 
-.profile {
-    width: 200px;
+.card {
+    border: 1px solid lightblue;
+    border-radius: 1em;
+    margin: 1em;
+    background-color: white;
+    /* position: relative; */
+}
+
+.card h2 {
+    padding: 1em;
+    text-align: center;
+    background-color: lightblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: darkblue;
+}
+
+.aboutme {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.3em;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.aboutme img {
+    width: 200px;
+    padding: 0.2em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em lightblue;
+    margin: 1em auto;
+}
+
+.aboutme p {
+    font: 0.8em sans-serif;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.philippines {
+    width: 100%;
+
     align-items: center;
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0.3rem;
-    background-color: gray;
+    margin: 10px auto;
+    padding: 0.3em;
+    border-color: aquamarine;
+
 }
 
+.philippines h3 {
+    border-bottom: 2px solid lightblue;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 
+.philippines img {
+    width: 200px;
+    height: auto;
+    padding: 0.2em;
+    margin: 100px auto;
+    border-radius: 1em;
+    box-shadow: 0 0 1em lightblue;
+}
+
+.philippines p {
+    font: 0.8em sans-serif;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+    
+}
 
 /* ASIDE */
-aside   {
-    background-color: lightblue;
+aside.card {
+    border: 1px solid lightblue;
     grid-area: aside;
-    padding: 1rem;
+    margin: 1em;
+    width: 40%;
+    display: inline-block;
 }
 
-aside img {
-    width: 100%;
-}  
 
-aside p {
-    text-align: center;
-    font: 0.8em sans-serif;
-    padding: 1rem;
+aside ul {
+    text-decoration: none;
+    font: 0.9em sans-serif;
+    padding: 20%;
+    
 }
+
+aside ul :hover {
+    display: flex;
+    
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 0.9em;
+   
+} 
 
 /* FOOTER */
 footer {
-    background: gray;
-    padding: 1rem;
+    background: darkblue;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +181,7 @@ footer {
 }   
 
 footer p {
-    text-align: center;
-    font: 1em sans-serif;
-    color: white;
+    /* text-align: center; */
+    font: 0.9em sans-serif;
+    color: whitesmoke;
 }
