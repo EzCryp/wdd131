@@ -36,7 +36,7 @@ body {
 *
 ***********************************/
 header {
-    background-color: var(--accent3-color);
+    background-color: var(--accent1-color);
     color: var(--primary-color);
     font: 1em sans-serif;
     grid-area: header;
@@ -94,7 +94,7 @@ main {
 }
 
 .about {
-    border: 1px solid var(--accent1-color);
+    border: 1px solid var(--accent3-color);
     border-radius: 1em;
     margin: 1em;
     /* background-color: var(--accent-color); */
@@ -103,7 +103,7 @@ main {
 
 .card h2 {
     padding: 1em;
-    background-color: var(--accent1-color);
+    background-color: var(--accent3-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
    
@@ -156,7 +156,7 @@ figcaption {
 }
 
 .philippines img {
-    max-width: 250px;
+    max-width: 15em;
     height: auto;
     padding: 1.2em;
     align-items: center;
@@ -184,7 +184,7 @@ figcaption {
 
 /* Card aside - Dev Resources */
 .dev {
-    border: 1px solid var(--accent1-color);
+    border: 1px solid var(--accent3-color);
     margin: 1em;
     flex-direction: column;
     border-radius: 1em;
@@ -199,7 +199,7 @@ aside ul {
     text-decoration: none;
     font: 1.1em sans-serif;
     justify-content: center;
-    padding: 20%;
+    padding: 30%;
     
 }
 
@@ -214,7 +214,7 @@ aside ul :hover {
 *
 ***********************************/
 footer {
-    background: var(--accent3-color);
+    background: var(--accent1-color);
     padding: 1em;
     display: grid;
     align-items: center;

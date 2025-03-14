@@ -95,8 +95,10 @@ aside {
 ***********************************/
 footer {
     background: gray;
-    padding: 1rem;
-    display: flex;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 1fr 1fr;
     align-items: stretch;
     justify-content: center;
     grid-area: footer;
