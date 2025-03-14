@@ -36,7 +36,7 @@ body {
 *
 ***********************************/
 header {
-    background-color: var(--accent1-color);
+    /* background-color: var(--accent1-color); */
     color: var(--primary-color);
     font: 1em sans-serif;
     grid-area: header;
