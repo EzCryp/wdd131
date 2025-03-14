@@ -54,7 +54,7 @@ nav {
     padding: 1em;
     grid-area: nav;
     background: var(--secondary-color);
-    box-shadow: 0 0 10px lightblue;
+    box-shadow: 0 0 10px var(--accent3-color);
 }
 
 nav a {
@@ -94,7 +94,7 @@ main {
 }
 
 .about {
-    border: 1px solid var(--accent3-color);
+    border: 1px solid var(--accent1-color);
     border-radius: 1em;
     margin: 1em;
     /* background-color: var(--accent-color); */
@@ -103,7 +103,7 @@ main {
 
 .card h2 {
     padding: 1em;
-    background-color: var(--accent3-color);
+    background-color: var(--accent1-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
    
@@ -147,7 +147,7 @@ figcaption {
 }
 
 .philippines h3 {
-    border-bottom: 2px solid var(--accent1-color);
+    border-bottom: 1px solid var(--accent1-color);
     padding-bottom: 10px;
     font-family: "Cormorant", serif;
     font-size: larger;
@@ -184,7 +184,7 @@ figcaption {
 
 /* Card aside - Dev Resources */
 .dev {
-    border: 1px solid var(--accent3-color);
+    border: 1px solid var(--accent1-color);
     margin: 1em;
     flex-direction: column;
     border-radius: 1em;
@@ -197,10 +197,9 @@ figcaption {
 
 aside ul {
     text-decoration: none;
-    font: 1.1em sans-serif;
+    font: 1em;
     justify-content: center;
     padding: 30%;
-    
 }
 
 aside ul :hover {
@@ -224,5 +223,5 @@ footer {
 
 footer p {
     font: 0.9em sans-serif;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
