@@ -97,8 +97,6 @@ main {
     border: 1px solid var(--accent1-color);
     border-radius: 1em;
     margin: 1em;
-    /* background-color: var(--accent-color); */
-    /* max-width: 980px; */
 }
 
 .card h2 {
@@ -118,7 +116,7 @@ main {
 }
 
 .aboutme img {
-    max-width: 220px;
+    max-width: 100%;
     border-radius: 1em;
     margin: 1em auto;
     grid-column-end: 3;
