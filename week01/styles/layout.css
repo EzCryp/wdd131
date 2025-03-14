@@ -1,0 +1,106 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+
+* {
+    
+    margin: 0;
+}
+    
+body {
+    font-family: Verdana, sans-serif;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template: auto 3fr auto / 3fr 1fr;
+    grid-template-areas: 
+        "header header" 
+        "main aside" 
+        "footer footer";
+}
+
+h1 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 1em;
+    padding: 1rem;
+}
+/************************************
+*
+*   HEADER 
+*
+***********************************/
+
+header {
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-area: header;
+}
+
+
+nav {
+    background: black;
+    margin: 0;
+    font: 0.9em sans-serif;
+}
+
+/************************************
+*
+*   MAIN / ASIDE
+*
+***********************************/
+
+main {
+    background: lightgray; 
+    padding: 1rem;
+}
+
+
+.box {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+
+}
+
+
+.box a {
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+aside {
+    background: whitesmoke; 
+    padding: 1rem;
+
+}
+
+/************************************
+*
+*   FOOTER 
+*
+***********************************/
+footer {
+    background: gray;
+    padding: 1rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: footer;
+}
+
+
+
