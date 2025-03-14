@@ -118,10 +118,11 @@ main {
 }
 
 .aboutme img {
-    max-width: 250px;
+    max-width: 220px;
     border-radius: 1em;
     margin: 1em auto;
     grid-column-end: 3;
+    box-shadow: 0 0 20px var(--accent1-color);
 }
 
 .aboutme p {
@@ -139,12 +140,13 @@ main {
     grid-template-rows: 0;
     border-radius: 1em;
     margin: 1em;
+    /* border: 1px solid var(--accent1-color); */
 }
 
-figcaption {
+/* figcaption {
     font-size: 0.6em sans-serif;
     padding: 5px;
-}
+} */
 
 .philippines h3 {
     border-bottom: 1px solid var(--accent1-color);
@@ -156,20 +158,21 @@ figcaption {
 }
 
 .philippines img {
-    max-width: 15em;
+    max-width: 220px;
+    margin: 20px;
     height: auto;
-    padding: 1.2em;
+    padding: 1em;
     align-items: center;
     /* justify-content: center;
     grid-column-end: 2; */
     float: left;
- 
+    /* box-shadow: 0 0 20px var(--accent1-color); */
 }
 
 .philippines p {
     font: 1em sans-serif;
     color: var(--primary-color);
-    /* padding: 20px; */
+    padding: 20px;
     font-family: "Roboto", sans-serif;
     grid-column-start: 2;
 }
