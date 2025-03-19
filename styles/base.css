@@ -86,8 +86,6 @@ main {
     grid-template-columns: 70% 30%;
     padding-right: 10em;
     padding-left: 10em;
-    /* height: 60vh; */
-    /* background-color: var(--accent3-color); */
     gap: 0;
     grid-area: main;
 
@@ -116,7 +114,7 @@ main {
 }
 
 .aboutme img {
-    max-width: 100%;
+    max-width: 70%;
     border-radius: 1em;
     margin: 1em auto;
     grid-column-end: 3;
@@ -224,5 +222,5 @@ footer {
 
 footer p {
     font: 0.9em sans-serif;
-    color: var(--secondary-color);
+    color: white;
 }
