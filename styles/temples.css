@@ -67,7 +67,7 @@ nav {
 
 h1 {
     text-align: left;
-    color: white;
+    color: var(--accent1-color);
 }
 
 ul {
@@ -149,7 +149,7 @@ img {
 figcaption {
     margin-top: 10px;
     text-align: center;
-    color: var(--color-primary);
+    color: maroon;
     font-size: 1rem;
 }
 
