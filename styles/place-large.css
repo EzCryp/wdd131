@@ -8,14 +8,14 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: #01222e;
+        background-color: #082131;
     }
 
     main {
         display: flex;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
-        background-color: #01222e;
+        background-color: #082131;
     }
 
     header {
@@ -30,7 +30,7 @@
     h2 {
         text-align: left;
         color: white;
-        background-color: #01222e;
+        background-color: #082131;
         margin: 0;
         width: 18rem;
         height: 4rem;
@@ -48,9 +48,9 @@
         position: absolute;
         background-color: rgba(255, 255, 255, 0.75);
         max-width: 300px;
-        max-height: 500px;
-        top: 150px;
-        left: 50px;
+        max-height: 550px;
+        top: 170px;
+        left: 70px;
     }
 
     .weather-box {
@@ -58,8 +58,8 @@
         position: absolute;
         background-color: rgba(255, 255, 255, 0.75);
         max-width: 300px;
-        bottom: 120px;
-        right: 20px;
+        bottom: -100px;
+        right: 70px;
         padding-bottom: 1rem;
     }
 
