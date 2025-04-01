@@ -1,0 +1,158 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --font-color-01: #CEC288;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/************************************
+*
+*   HEADER 
+*
+***********************************/
+
+h1 {
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+h2 {
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+header {
+    grid-row: 1;
+    color: var(--font-color-01);
+    background-color: #082131;
+    border-bottom: 20px solid yellowgreen;
+}
+
+/************************************
+*
+*   MAIN
+*
+***********************************/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero {
+    grid-row: 2;
+    text-align: center;
+    margin: 0;
+}
+
+picture img {
+    margin: 0;
+    padding-bottom: 5px;
+    background-color: yellowgreen;
+    max-width: 100%;
+}
+
+.data-box {
+    grid-row: 3;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.data-item {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.label {
+    font-weight: 700;
+    text-align: right;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.value {
+    text-align: left;
+    flex: 1;
+}
+
+.weather-box {
+    grid-row: 4;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+svg {
+    max-width: 100px;
+}
+
+/*SVG Colors*/
+.cls-1 {
+    fill: #f8b62d;
+}
+
+.cls-1,
+.cls-2 {
+    stroke: #231815;
+    stroke-miterlimit: 10;
+}
+
+.cls-2,
+.cls-4 {
+    fill: #231815;
+}
+
+.cls-3 {
+    fill: #fff;
+}
+
+/************************************
+*
+*   FOOTER 
+*
+***********************************/
+
+footer {
+    grid-row: 5;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 15px;
+    color: white;
+    background-color: #082131;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+
+
