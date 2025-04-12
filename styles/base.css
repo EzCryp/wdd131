@@ -6,7 +6,7 @@
 :root
 {
     --primary-color: #1C448E;
-    --secondary-color: #6F8695;
+    --secondary-color: #082131;
     --accent1-color: #CEC288;
     --accent2-color: #FFE381;
     --accent3-color: #DBFE87;
@@ -212,7 +212,7 @@ aside ul :hover {
 *
 ***********************************/
 footer {
-    background: var(--accent1-color);
+    background: var(--secondary-color);
     padding: 1em;
     display: grid;
     align-items: center;
@@ -224,3 +224,4 @@ footer p {
     font: 0.9em sans-serif;
     color: white;
 }
+

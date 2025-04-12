@@ -57,8 +57,8 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template: auto 1fr auto / auto;
     justify-content: center;
     align-items: center;
     height: 100%;

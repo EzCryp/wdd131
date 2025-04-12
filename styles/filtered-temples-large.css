@@ -1,0 +1,144 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+:root {
+    --color-primary: #082131;
+    --accent1-color: #CEC288;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-weight: 400;
+    margin-left: 0;
+    text-align: left;
+    color: var(--accent1-color);
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+section .label, section p {
+    font-size: small;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.open a {
+    display: block;
+}
+
+main .temple-cards {
+    grid-template-columns: 1fr;
+}
+
+h2 {
+    grid-column: span 1;
+}
+
+/************************************
+*
+*   Desktop
+*
+***********************************/
+@media (min-width: 1025px) {
+    main .temple-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+}
+
+/************************************
+*
+*   View Width: 741px and above
+*
+***********************************/
+@media (min-width: 741px) and (max-width: 1024px) {
+    main .temple-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+}
+
+/************************************
+*
+*   View Min-Width: 740px 
+*
+***********************************/
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+    }
+}
