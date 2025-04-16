@@ -1,0 +1,89 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+:root {
+    --color-primary: #082131;
+    --accent1-color: #CEC288;
+    --font-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/************************************
+*
+*   HEADER
+*
+***********************************/
+header {
+    color: white;
+    background-color: #082131;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+/************************************
+*
+*   MAIN
+*
+***********************************/
+main {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+picture {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/************************************
+*
+*   FOOTER 
+*
+***********************************/
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 15px;
+    height: auto;
+}
+
+.last-modified {
+    color: var(--accent1-color);
+    font-size: 1em;
+}
