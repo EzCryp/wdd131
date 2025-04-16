@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ezra Zacarias, BYU-Idaho, WDD131">
+    <meta name="author" content="Ezra Zacarias">
+    <title>W05 - Form</title>
+
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset class="products">
+                <label>Product Name<select id="productSelect" name="product" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select></label>
+
+            </fieldset>
+
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <label>&#9733; <input type="radio" id="onestar" name="stars" value="1" required></label>
+                <label>&#9733; &#9733; <input type="radio" id="twostar" name="stars" value="2" required></label>
+                <label>&#9733; &#9733; &#9733; <input type="radio" id="threestar" name="stars" value="3" required></label>
+                <label>&#9733; &#9733; &#9733; &#9733; <input type="radio" id="fourstar" name="stars" value="4" required></label>
+                <label>&#9733;&#9733;&#9733;&#9733;&#9733;<input type="radio" id="fivestar" name="stars" value="5" required></label>
+            </fieldset>
+
+            <fieldset class="installation">
+                <label>Date of Installation<input type="date" id="installationDate" name="dateOfInstall" required></label>
+
+            </fieldset>
+
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?</legend>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="usefulFeatures" value="durability">Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="usefulFeatures" value="easeOfUse">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="usefulFeatures" value="performance">Performance</label>
+                <label><input type="checkbox" id="design" name="usefulFeatures" value="design">Design</label>
+            </fieldset>
+
+            <fieldset class="written">
+                <label>Written Review <span class="optional">(Optional)</span><textarea id="writtenReview" name="userReview"></textarea></label>
+            </fieldset>
+
+            <fieldset class="name">
+                <label>Your Name <span class="optional">(Optional)<input type="text" id="fullName name="userName"></span></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Ezra Zacarias | PHL 🇵🇭 </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
