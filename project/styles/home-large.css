@@ -1,0 +1,150 @@
+/* Responsive Navigation */
+@media screen and (max-width: 909px) {
+    header {
+        padding: 3rem 0 2rem 20px;
+    }
+
+    header h1 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* left: -150px; */
+        background-color: var(--primary-color);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+
+    .header-nav ul li:hover {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .header-nav ul.open {
+        display: flex;
+    }
+
+    .header-nav ul li {
+        width: 100%;
+    }
+
+   #menu {
+        top: 0.1rem;
+   }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/************************************
+*
+*   MEDIA QUERIES - CFM GALLERY
+*
+***********************************/
+@media screen and (min-width: 910px) {
+    .cfm-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cfm-card {
+        max-width: 100%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .cfm-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+    }
+
+    /* CFM Gallery */
+    .cfm-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        max-width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .cfm-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+    }
+
+    .cfm-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .cfm-card .cfm-info {
+        padding: 15px;
+        background-color: yellowgreen;
+        color: var(--text-color);
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .cfm-card h2 {
+        margin-top: 0;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .cfm-card p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+}
+
+/************************************
+*
+*   MEDIA QUERIES - FORM STYLES
+*
+***********************************/
+/* Responsive Form Styles */
+@media screen and (max-width: 700px) {
+    .form {
+        padding: 15px;
+    }
+
+    .form legend {
+        font-size: 1.3rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="date"],
+    .form select,
+    .form textarea {
+        font-size: 0.9rem;
+    }
+
+    .form button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    
+}

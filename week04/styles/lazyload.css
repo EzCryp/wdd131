@@ -4,7 +4,7 @@
 *
 ***********************************/
 :root {
-    --color-primary: #082131;
+    --color-primary: #082131; 
     --accent1-color: #CEC288;
     --font-color: #000;
 }
@@ -42,7 +42,7 @@ h1 {
 ***********************************/
 main {
     margin: 0 auto;
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ezra Zacarias">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ezra Zacarias, BYU-Idaho, Project">
+    <title>Come Follow Me Share - Project</title>
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/sitelogo.webp" alt="Logo" width="100" height="100">
+        </div>
+        
+        <div class="header-name>">
+            <h1>Come Follow Me - Share</h1>
+        </div>
+        <div class="header-nav" id="menu">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="cfm-gallery.html" >CFM Gallery</a></li>
+                    <li><a href="share.html" >Share Your Thoughts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="menu-button"></button>
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 789px)" srcset="images/hero-image1.webp">
+                <img src="images/hero-image2.webp" alt="Hero Image" width="600" height="400" loading="lazy">
+            </picture>
+        </div>
+
+        <div class="cta-container">
+            <a href="share.html" class="cta-button">Share your Thoughts!</a>
+        </div>
+        
+        <!-- cards when click will open cfm gallery -->
+        <div class="cfm-cards">
+            <div class="cfm-card" href="cfm-gallery.html">
+                <img src="images/4.webp" alt="Current Lesson 1" width="600" height="400" loading="lazy">
+                <div class="cfm-info">
+                    <h2>March 31 - April 6</h2>
+                    <h4>"Jesus Christ Will Gather His People"</h4>
+                    <p>President Russell M. Nelson said: “Now the gathering takes place in each nation. The Lord has decreed the establishment of Zion in each realm where He has given His Saints their birth and nationality”</p>
+                    <p>How does gathering in this way help us “be prepared in all things” for the Savior’s Second Coming?</p>
+                </div>
+            </div>
+
+            <div class="cfm-card">
+                <img src="images/5.webp" alt="Current Lesson 2" width="600" height="400" loading="lazy">
+                <div class="cfm-info">
+                    <h2>April 7 -  13</h2>
+                    <h4>“Lift Up Your Voices … to Declare My Gospel”</h4>
+                    <p>Elder Gary E. Stevenson taught that proclaiming the gospel “can be accomplished through simple, 
+                        easily understandable principles taught to each of us from childhood: love, share, and invite”</p>
+                    <p>Consider studying his message while thinking about your acquaintances, friends, and family. 
+                        What ideas come to you about how you can share with them “what [you] love about the gospel of Jesus Christ”?</p>
+                </div>
+            </div>
+
+            <div class="cfm-card">
+                <img src="images/6.webp" alt="Current Lesson 3" width="600" height="400" loading="lazy">
+                <div class="cfm-info">
+                    <h2> April 14 - 20</h2>
+                    <h4>"I Am He Who Liveth, I Am He Who Was Slain"</h4>
+                    <p>What does it mean to say that Jesus Christ is “he who liveth”? It doesn’t just mean that He rose from the tomb and appeared to His disciples in Galilee. 
+                        It means that He lives today. He speaks through prophets today. He leads His Church today. 
+                        He heals wounded souls and broken hearts today. So we can echo the words of Joseph Smith’s powerful testimony: 
+                        “After the many testimonies which have been given of him, this is the testimony … which we give of him: That he lives!”</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Ezra Zacarias | PHL 🇵🇭 </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

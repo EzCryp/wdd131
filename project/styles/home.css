@@ -1,0 +1,536 @@
+/************************************
+*
+*   GENERAL STYLES 
+*
+***********************************/
+:root {
+  
+    --background-header-color: #E5E5E5;
+    --text-color1: #000000;
+    --text-color2: #FFFFFF;
+    --primary-color: #14213D;
+    --secondary-color: #FCC18E;
+
+    --font-primary: 'Roboto', sans-serif;
+   
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body and Typography */
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+/************************************
+*
+*  HEADER / NAVIGATION STYLES
+*
+***********************************/
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--background-header-color);
+    padding: 1rem;
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+}
+
+
+header img {
+    height: auto;
+    max-width: 90px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-name, h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-top: 2rem; */
+    padding: 2rem 0;
+    color: var(--text-color2);
+}
+
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    /* list-style: none; */
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.header-nav a {
+    /* display: none; */
+    /* padding: 1rem; */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav a:hover {
+    font-weight: 700;
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.open a {
+    display: block;
+}
+nav {
+    /* margin-top: 1.5rem; */
+    display: flex;
+    flex-direction: column;;
+    padding: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 2cm;
+    color: var(--background-header-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color1);
+    font-weight: var(--font-weight-regular);
+    border-radius: 2rem;
+}
+
+
+h1 {
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+#menu {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu-button {
+    
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+#menu-button::before {
+    background-color: var(--primary-color);
+    color: var(--background-header-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: auto;
+    content: "☰";
+}
+
+#menu-button.open::before {
+    color: var(--secondary-color);
+    margin: auto;
+    content: "X";
+}
+
+h2 {
+    grid-column: span 3;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/************************************
+*
+*   MAIN STYLES
+*
+***********************************/
+
+main {
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call to Action Button */
+.cta-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Come Follow Me Gallery Cards */
+/* CFM Gallery */
+.cfm-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+.cfm-cards .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.cfm-cards .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+.cfm-cards .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+.cfm-cards .card .cfm-info {
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.cfm-cards .card h2 {
+    margin-top: 0;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.cfm-cards .card p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.cfm-cards .card .cfm-info h3 {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.cfm-cards .card .cfm-info p {
+    font-size: 0.9rem;
+    color: var(--text-color1);
+    margin-bottom: 15px;
+}
+.cfm-cards .card .cfm-info a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cfm-cards .card .cfm-info a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.cfm-cards {
+    display: grid;
+    grid-template-columns: repeat(3);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.cfm-cards .card {
+    background-color: var(--background-header-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cfm-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cfm-cards .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.cfm-cards .card .card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.cfm-cards .card .card-content h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.cfm-cards .card .card-content p {
+    font-size: 1rem;
+    color: var(--text-color1);
+    margin-bottom: 15px;
+}
+
+.cfm-cards .card .card-content a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cfm-cards .card .card-content a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/************************************
+*
+*   FOOTER STYLES 
+*
+***********************************/
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer #lastModified {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+
+/************************************
+*
+*   FORM STYLES
+*
+***********************************/
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.form legend {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form .radio-field div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form .radio-field label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.radio-field {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0.1rem;
+}
+
+.radio-field label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.radio-field label input[type="radio"] {
+    margin-top: 0.2rem;
+}
+
+.form input:required {
+    border-left: solid 10px red;
+}
+
+.form select:required {
+    border-left: solid 10px red;
+}
+
+.form input:required:valid {
+    border-left: solid 10px green;
+}
+
+.form select:required:valid {
+    border-left: solid 10px green;
+}
+
+
+
+
+/************************************
+*
+*   CONGRATULATIONS STYLES
+*
+***********************************/
+
+
+.congratulations h2 {
+    padding: 1rem 0 1rem 0;
+}
+
+.congratulations .large-image {
+    position: relative;
+}
+
+.congratulations .large-image img {
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.congratulations .large-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}

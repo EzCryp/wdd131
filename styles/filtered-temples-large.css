@@ -26,7 +26,7 @@ h3 {
 }
 
 section .label, section p {
-    font-size: small;
+    font-size: 1rem;
 }
 
 #menu {
@@ -36,7 +36,7 @@ section .label, section p {
     color: #000;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
 }
 
 .nav {
