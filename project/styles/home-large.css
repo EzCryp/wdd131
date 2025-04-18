@@ -97,7 +97,7 @@
 
     .cfm-card .cfm-info {
         padding: 15px;
-        background-color: yellowgreen;
+        background-color: var(--text-color2);
         color: var(--text-color);
         text-align: center;
         font-size: 1rem;
